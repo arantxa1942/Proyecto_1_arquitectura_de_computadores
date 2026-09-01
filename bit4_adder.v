@@ -1,4 +1,4 @@
-module 4bit_adder (
+module bit4_adder (
     input wire [3:0] A,
     input wire [3:0] B,
     output wire [3:0] Salida

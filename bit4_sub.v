@@ -1,4 +1,4 @@
-module 4bit_sub (
+module bit4_sub (
     input wire [3:0] A,
     input wire [3:0] B,
     output wire [3:0] Salida
@@ -13,12 +13,12 @@ module 4bit_sub (
 
     wire [3:0] salida1;
 
-    4bit_adder g4 (salida1, A, B_comp1);
+    bit4_adder g4 (salida1, A, B_comp1);
 
-    wire [3:0] 1binario;
+    wire [3:0] binario1;
 
-    assign 1binario = 4'b0001;
+    assign binario1 = 4'b0001;
 
-    4bit_adder g5 (Salida, salida1, 1binario);
+    bit4_adder g5 (Salida, salida1, binario1);
 
 endmodule
