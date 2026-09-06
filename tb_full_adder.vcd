@@ -1,0 +1,75 @@
+$date
+	Sun Sep 06 19:19:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_full_adder $end
+$var wire 1 ! Salida $end
+$var wire 1 " CarryOut $end
+$var reg 1 # Bit1 $end
+$var reg 1 $ Bit2 $end
+$var reg 1 % CarryIn $end
+$scope module uut $end
+$var wire 1 # Bit1 $end
+$var wire 1 $ Bit2 $end
+$var wire 1 % CarryIn $end
+$var wire 1 " CarryOut $end
+$var wire 1 ! Salida $end
+$var wire 1 & x1 $end
+$var wire 1 ' x2 $end
+$var wire 1 ( x3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1!
+1%
+#20000
+1&
+0%
+1$
+#30000
+1"
+0!
+1(
+1%
+#40000
+0"
+1!
+0(
+0%
+0$
+1#
+#50000
+1"
+0!
+1(
+1%
+#60000
+0(
+0&
+1'
+0%
+1$
+#70000
+1!
+1%
+#80000
