@@ -1,5 +1,5 @@
 
-'timescale 1ns/1ps 
+`timescale 1ns/1ps
 
 module tb_bit4_adder; 
     reg [3:0] A; 

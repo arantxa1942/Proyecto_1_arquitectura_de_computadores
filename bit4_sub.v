@@ -13,7 +13,7 @@ module bit4_sub (
 
     wire [3:0] salida1;
 
-    bit4_adder g4 (.A(A), .B(B_comp1), Salida(salida1));
+    bit4_adder g4 (.A(A), .B(B_comp1), .Salida(salida1));
 
     wire [3:0] binario1;
 

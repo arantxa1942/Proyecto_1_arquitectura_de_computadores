@@ -1,4 +1,4 @@
-'timescale 1ns/1ps 
+`timescale 1ns/1ps
 
 module tb_bit4_inv_sub;
     reg[3:0] A;   //declara dos vectores de 4 bit se pueden asignar valores dentro de un 
