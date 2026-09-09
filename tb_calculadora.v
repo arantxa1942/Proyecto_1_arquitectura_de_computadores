@@ -2,7 +2,7 @@
 
 module tb_calculadora;
 
-    // --- Declaración de señales para el módulo bajo prueba (DUT) ---
+    
     reg [3:0] op1;
     reg [3:0] op2;
     reg selector_op2;
@@ -11,8 +11,8 @@ module tb_calculadora;
 
     wire [3:0] resultado;
 
-    // --- Instanciar el módulo principal ---
-    // NOTA: Asegúrate de que el nombre del módulo coincida con tu archivo (ej: calculadora_top o calculadora)
+    
+    
     calculadora dut (
         .op1(op1),
         .op2(op2),
@@ -22,31 +22,31 @@ module tb_calculadora;
         .resultado(resultado)
     );
 
-    // --- Generar archivo .vcd para GTKWave ---
+    
     initial begin
         $dumpfile("tb_calculadora.vcd");
         $dumpvars(0, dut);
     end
 
-    // --- Testbench: Aplicar casos de prueba ---
+    
     initial begin
-        // Inicializar todas las entradas
+        
         op1 = 4'b0000;
         op2 = 4'b0000;
         selector_op2 = 0;
         opcode = 3'b000;
         ejecutar = 0;
 
-        // Esperar 10 ns para estabilizar la simulación
+        
         #10;
 
-        // --- Caso 1: Reinicio (opcode = 000) ---
+        
         opcode = 3'b000;
-        op1 = 4'b1010; // Ejemplo: 10 en decimal
-        op2 = 4'b1101; // Ejemplo: -3 en complemento a dos
+        op1 = 4'b1010; 
+        op2 = 4'b1101; 
         selector_op2 = 0;
         #10;
-        ejecutar = 1; // Pulso de ejecución
+        ejecutar = 1; 
         #10;
         ejecutar = 0;
         #10;
